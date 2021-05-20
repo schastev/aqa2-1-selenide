@@ -1,7 +1,8 @@
 package ru.netology;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -11,7 +12,7 @@ public class orderTest {
     @Test
     public void correctInputTest(){
         open("http://localhost:9999");
-        Configuration.browser = "chrome";
+        WebDriverManager.chromedriver().setup();
         $("[type='tel']").setValue("+00000000000");
         $("[name='name']").setValue("Аа-бБ вВ");
         $("[data-test-id='agreement']").click();
