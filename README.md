@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/4s26byk8mte9h65r?svg=true)](https://ci.appveyor.com/project/k-emiko/aqa2-1-selenide)
