@@ -15,6 +15,6 @@ public class orderTest {
         $("[name='name']").setValue("Аа-бБ вВ");
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
-        $(".paragraph").shouldHave(Condition.exactText("Ваши заявки успешно отправлены! Наш менеджер свяжется с вами в ближайшее время."));
+        $(".paragraph").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 }
