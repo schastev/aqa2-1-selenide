@@ -15,7 +15,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".paragraph")
-                .shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+                .shouldHave(Condition.exactText("Ваш заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 
     @Test
@@ -25,7 +25,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".input_invalid .input__sub")
-                .shouldHave(Condition.text("Поле обязательно для заполнения"));
+                .shouldHave(Condition.text("Пол обязательно для заполнения"));
     }
 
     @Test
@@ -36,7 +36,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".input_invalid .input__sub")
-                .shouldHave(Condition.text("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
+                .shouldHave(Condition.text("Им и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
     @Test
     public void emptyPhoneTest() {
@@ -45,7 +45,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".input_invalid .input__sub")
-                .shouldHave(Condition.text("Поле обязательно для заполнения"));
+                .shouldHave(Condition.text("Пол обязательно для заполнения"));
     }
     @Test
     public void incorrectPhoneTest() {
@@ -55,7 +55,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".input_invalid .input__sub")
-                .shouldHave(Condition.text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
+                .shouldHave(Condition.text("Телефо указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
     @Test
     public void noAgreementTest() {
@@ -64,7 +64,7 @@ public class orderTest {
         $("[name='name']").setValue("Аа-бБ вВ");
         $("[type='button']").click();
         $(".input_invalid")
-                .shouldHave(Condition.text("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
+                .shouldHave(Condition.text(" соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
     }
     @Test
     public void twoIncorrectFieldsFirstTest() {
@@ -72,7 +72,7 @@ public class orderTest {
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
         $(".input_invalid .input__sub")
-                .shouldHave(Condition.text("Поле обязательно для заполнения"));
+                .shouldHave(Condition.text("оле обязательно для заполнения"));
     }
 
 }
