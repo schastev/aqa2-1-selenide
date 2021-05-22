@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class orderTest {
+public class OrderTest {
 
     @Test
     public void correctInputTest(){
